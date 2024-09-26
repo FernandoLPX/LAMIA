@@ -1,5 +1,6 @@
 #!python3
 
+
 class Carro:
     def __init__(self):
         self.__velocidade = 0
@@ -27,8 +28,8 @@ class Ferrari(Carro):
         return super().acelerar()
 
 
-c1 = Ferrari()
-print(c1.acelerar())
+c1 = Ferrari()  # c1 também tem acesso a classe Carro devido a herança
+print(c1.acelerar())  # c1 irá sobrescrever o método herdado
 print(c1.acelerar())
 print(c1.acelerar())
 print(c1.frear())

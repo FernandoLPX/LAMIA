@@ -13,5 +13,6 @@ def soma_e_multi(a, b, x):
     return a + b * x
 
 
+# código comum usado para garantir que será executado se for inicializado pelo main
 if __name__ == "__main__":
     saudacao("Ana", idade=30)

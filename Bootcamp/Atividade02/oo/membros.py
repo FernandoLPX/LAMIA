@@ -8,7 +8,7 @@ class Contador:
         self.contador = self.contador + 1
         return self.contador
 
-    @classmethod
+    @classmethod  # define um método para ser da classe e não da instância
     def inc(cls):
         cls.contador += 1
         return cls.contador
@@ -18,7 +18,7 @@ class Contador:
         cls.contador -= 1
         return cls.contador
 
-    @staticmethod
+    @staticmethod  # define um método para ser estático que difere do classmethod onde só tem acesso ao proprio método enquanto o outro tem acesso a toda classe
     def mais_um(n):
         return n + 1
 
